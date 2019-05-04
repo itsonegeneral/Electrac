@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Electra</string>
+    <string name="map_api_key">AIzaSyDJvcoC8WnwLh1xW_Pgwm3Dr-C553iRYaw</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="response_array">
+        <item>Incomplete</item>
+        <item>Read</item>
+        <item>On the Way</item>
+        <item>Rejected</item>
+        <item>Accepted</item>
+        <item>Complete</item>
+
+    </string-array>
+</resources>

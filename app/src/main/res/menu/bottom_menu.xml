@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/menu_home"/>
+    <item
+        android:title="New Request"
+        android:icon="@drawable/ic_add_circle"
+        android:id="@+id/menu_requests"/>
+
+
+</menu>

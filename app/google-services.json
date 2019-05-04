@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "1007641525094",
+    "firebase_url": "https://electra-3da07.firebaseio.com",
+    "project_id": "electra-3da07",
+    "storage_bucket": "electra-3da07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007641525094:android:4d973ce8611ae520",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007641525094-t8h6n8n995ftjl8ffamngok4epfs7heh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJvcoC8WnwLh1xW_Pgwm3Dr-C553iRYaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007641525094-t8h6n8n995ftjl8ffamngok4epfs7heh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007641525094:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007641525094-e985iacg13oh5rfrn6gdr95br4a564ii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "30d34ed7ccb15edc886f5fc1326e324d61d35800"
+          }
+        },
+        {
+          "client_id": "1007641525094-t8h6n8n995ftjl8ffamngok4epfs7heh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJvcoC8WnwLh1xW_Pgwm3Dr-C553iRYaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007641525094-t8h6n8n995ftjl8ffamngok4epfs7heh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007641525094:android:9a7ae6631a25b804",
+        "android_client_info": {
+          "package_name": "com.rstudio.electra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007641525094-t8h6n8n995ftjl8ffamngok4epfs7heh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJvcoC8WnwLh1xW_Pgwm3Dr-C553iRYaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007641525094-t8h6n8n995ftjl8ffamngok4epfs7heh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

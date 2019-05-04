@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardLoginActivity">
+
+    <include layout="@layout/main_toolbar"
+        android:id="@+id/tb_adminLogin"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Email ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_AdminLoginEmail"
+            android:layout_width="230dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_AdminLoginPassword"
+            android:layout_width="230dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="100dp"
+            android:background="@drawable/button_new_account"
+            android:text="Login"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/bt_adminLogin"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Board Registration"
+        android:id="@+id/tv_boardRegitration"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/roboto_mono"
+        android:textSize="18sp"
+        android:elevation="3dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
