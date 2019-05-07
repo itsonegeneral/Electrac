@@ -59,6 +59,10 @@ public class BoardHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent(BoardHomeActivity.this,BoardNewNotificationActivity.class);
+                i.putExtra("district",district);
+                i.putExtra("division",division);
+                startActivity(i);
             }
         });
 
@@ -116,7 +120,7 @@ public class BoardHomeActivity extends AppCompatActivity {
                 Collections.sort(notificationList, new Comparator<Request>() {
                     @Override
                     public int compare(Request o1, Request o2) {
-                        return o2.getTime().compareTo(o1.getTime());
+                        return o1.getTime().compareTo(o2.getTime());
                     }
                 });
                 mAdaptor = new NotificationAdapter(notificationList, getApplicationContext());

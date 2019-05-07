@@ -75,7 +75,9 @@ public class ReadUserDetails extends AppCompatActivity {
             etConsumerNo.setError("Required");
         } else if (etPhone.getText().toString().length() < 10) {
             etPhone.setError("Phone Req");
-        } else {
+        } else if(etConsumerNo.getText().toString().length() <12) {
+            etConsumerNo.setError("12 Digit Consumer No");
+        }else{
             return true;
         }
         return false;
@@ -140,6 +142,13 @@ public class ReadUserDetails extends AppCompatActivity {
                         tadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                         sp_division.setAdapter(tadapter);
                         sp_division.setPrompt("Select Division");
+                    }
+                    case 3: {
+                        ArrayAdapter<CharSequence> tadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.division_array_pta, android.R.layout.simple_spinner_dropdown_item);
+                        tadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        sp_division.setAdapter(tadapter);
+                        sp_division.setPrompt("Select Division");
+                        break;
                     }
                 }
             }

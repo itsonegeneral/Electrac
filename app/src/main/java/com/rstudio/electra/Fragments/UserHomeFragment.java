@@ -132,7 +132,7 @@ public class UserHomeFragment extends Fragment {
                 Collections.sort(notificationList, new Comparator<Request>() {
                     @Override
                     public int compare(Request o1, Request o2) {
-                        return o2.getTime().compareTo(o1.getTime());
+                        return o1.getTime().compareTo(o2.getTime());
                     }
                 });
                 mAdaptor = new NotificationAdapter(notificationList, getContext());

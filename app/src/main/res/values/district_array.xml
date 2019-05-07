@@ -16,7 +16,7 @@
         <item>Kannur</item>
         <item>Kasaragod</item>
     </string-array>
-    <string-array name="division_array_kollam">
+    <string-array name="division_array_pta">
         <item>Adoor</item>
         <item>Pattazhi</item>
         <item>Ezhamkulam</item>
@@ -25,6 +25,11 @@
         <item>Venjaramoodu</item>
         <item>Panavoor</item>
         <item>Pothencode</item>
+    </string-array>
+    <string-array name="division_array_kollam">
+        <item>Karunagappally</item>
+        <item>Kavanad</item>
+        <item>Neendakara</item>
     </string-array>
     <string-array name="division_array_alpy">
         <item>Paravoor</item>

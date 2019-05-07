@@ -132,7 +132,8 @@ public class RequestFragment extends Fragment implements LocationListener, OnMap
                     onesignalid = dataSnapshot.getValue(String.class);
                 }
                 else {
-                    Toast.makeText(getContext(), "No Boards Found", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "No Boards Found At Your Location", Toast.LENGTH_SHORT).show();
+
                 }
 
             }
@@ -168,6 +169,8 @@ public class RequestFragment extends Fragment implements LocationListener, OnMap
         }
         if (isSpecifyMoreAttached) {
             request.setSenderMessage(etSpecifyMore.getText().toString());
+        }else{
+            request.setSenderMessage("No Message");
         }
 
         sendNot(onesignalid, "New Complaint Received");

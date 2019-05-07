@@ -191,6 +191,13 @@ public class BoardRegistrationActivity extends AppCompatActivity {
                         spDivision.setAdapter(tadapter);
                         spDivision.setPrompt("Select Division");
                     }
+                    case 3: {
+                        ArrayAdapter<CharSequence> tadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.division_array_pta, android.R.layout.simple_spinner_dropdown_item);
+                        tadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        spDivision.setAdapter(tadapter);
+                        spDivision.setPrompt("Select Division");
+                        break;
+                    }
                 }
             }
 

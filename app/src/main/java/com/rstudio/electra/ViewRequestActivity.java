@@ -29,8 +29,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class ViewRequestActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-    String name, phone, message, status, consumerId,senderConsumerId;
-    TextView tvName, tvPhone, tvMessage, tvLocation, tvConsumerId, tvSender,tvRequestType;
+    String name, phone, message, status, consumerId, senderConsumerId;
+    TextView tvName, tvPhone, tvMessage, tvLocation, tvConsumerId, tvSender, tvRequestType;
 
     TextView tvRequestId;
     Spinner statusSpinner;
@@ -42,7 +42,7 @@ public class ViewRequestActivity extends AppCompatActivity implements OnMapReady
     private static final String TAG = "ViewRequestActivity";
     private DatabaseReference ref, refAdmin;
     private String district;
-    private String division,requesttype;
+    private String division, requesttype;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,20 +119,21 @@ public class ViewRequestActivity extends AppCompatActivity implements OnMapReady
         status = getIntent().getStringExtra("status");
         senderId = getIntent().getStringExtra("senderid");
 
-        senderConsumerId = String.valueOf(getIntent().getLongExtra("senderconsumerid",0));
-        consumerId = getIntent().getStringExtra("consumerid");
+        senderConsumerId = String.valueOf(getIntent().getLongExtra("senderconsumerid", 0));
+        consumerId = String.valueOf(getIntent().getLongExtra("consumerid",0));
         requestId = getIntent().getStringExtra("requestid");
         requesttype = getIntent().getStringExtra("requesttype");
         district = getIntent().getStringExtra("district");
         division = getIntent().getStringExtra("division");
 
         tvName.setText(name);
+        tvName.setText(name);
         tvMessage.setText(message);
         tvPhone.setText(phone);
         tvLocation.setText(lat + " " + log);
         tvRequestId.setText(requestId);
         tvConsumerId.setText(consumerId);
-        tvSender.setText(senderId);
+        tvSender.setText(senderConsumerId);
         tvRequestType.setText(requesttype);
 
 
