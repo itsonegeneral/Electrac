@@ -75,9 +75,9 @@ public class ReadUserDetails extends AppCompatActivity {
             etConsumerNo.setError("Required");
         } else if (etPhone.getText().toString().length() < 10) {
             etPhone.setError("Phone Req");
-        } else if(etConsumerNo.getText().toString().length() <12) {
+        } else if (etConsumerNo.getText().toString().length() < 12) {
             etConsumerNo.setError("12 Digit Consumer No");
-        }else{
+        } else {
             return true;
         }
         return false;
@@ -123,13 +123,7 @@ public class ReadUserDetails extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
-                    case 1: {
-                        ArrayAdapter<CharSequence> tadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.division_array_kollam, android.R.layout.simple_spinner_dropdown_item);
-                        tadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                        sp_division.setAdapter(tadapter);
-                        sp_division.setPrompt("Select Division");
-                        break;
-                    }
+
                     case 0: {
                         ArrayAdapter<CharSequence> tadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.division_array_tvm, android.R.layout.simple_spinner_dropdown_item);
                         tadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -137,11 +131,20 @@ public class ReadUserDetails extends AppCompatActivity {
                         sp_division.setPrompt("Select Division");
                         break;
                     }
+                    case 1: {
+                        ArrayAdapter<CharSequence> tadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.division_array_kollam, android.R.layout.simple_spinner_dropdown_item);
+                        tadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        sp_division.setAdapter(tadapter);
+                        sp_division.setPrompt("Select Division");
+                        break;
+                    }
+
                     case 2: {
                         ArrayAdapter<CharSequence> tadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.division_array_alpy, android.R.layout.simple_spinner_dropdown_item);
                         tadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                         sp_division.setAdapter(tadapter);
                         sp_division.setPrompt("Select Division");
+                        break;
                     }
                     case 3: {
                         ArrayAdapter<CharSequence> tadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.division_array_pta, android.R.layout.simple_spinner_dropdown_item);
